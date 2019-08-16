@@ -73,12 +73,14 @@ final class ClassicFireworkDemoViewController: UIViewController {
         }, completion: nil)
     }
 
+    ///按下
     @IBAction private func buttonTouchedDown(sender: UIButton) {
         UIView.animate(withDuration: 0.05, animations: {
             sender.transform = CGAffineTransform(scaleX: 0.95, y: 0.92)
         }, completion: nil)
     }
 
+    ///松开
     @IBAction private func buttonTouchedUpOutside(sender: UIButton) {
         UIView.animate(withDuration: 0.1, animations: {
             sender.transform = CGAffineTransform.identity
